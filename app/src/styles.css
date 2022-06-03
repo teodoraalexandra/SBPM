@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.primaryButton {
+  background-color: #F29602;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background-color: #FDB849;
+  color: white;
+}
+
+.secondaryButton {
+  background-color: #1E325C;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.secondaryButton:hover {
+  background-color: #3C64B9;
+  color: white;
+}
+
+.margin-left {
+  margin-left: 12px;
+}
