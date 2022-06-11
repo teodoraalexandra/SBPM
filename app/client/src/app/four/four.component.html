@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <div class="row align-items-center justify-content-between">
+    <div>
+      {{ query }}
+      <br/>
+      <br/>
+      <table class="table">
+        <thead class="thead-light">
+        <tr>
+          <th>Search</th>
+          <th>Result</th>
+          <th>Found Field</th>
+          <th>Found Text</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of rawResponse; let i = index">
+          <td>{{ item.search }}</td>
+          <td>{{ item.result }}</td>
+          <td>{{ item.foundField }}</td>
+          <td>{{ item.foundText }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

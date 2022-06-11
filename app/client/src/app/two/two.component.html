@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div class="row align-items-center justify-content-between">
+    <div>
+      {{ query }}
+      <br/>
+      <br/>
+      <table class="table">
+        <thead class="thead-light">
+        <tr>
+          <th>Title</th>
+          <th>Budget</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of rawResponse; let i = index">
+          <td>{{ item.title }}</td>
+          <td>{{ item.budget }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
